@@ -37,7 +37,7 @@
 							
 							<tbody>
 								<tr id="input-row">
-									<td colspan="4" class="input-line"><input class="span16 time-input" id="time-input" name="" type="text" placeholder="#312 17:00 18:00 Some comment" /></td>
+									<td colspan="4" class="input-line"><input class="span16 time-input" id="time-input" name="" type="text" placeholder="17:00 18:00 #312 Some comment" /></td>
 								</tr>
 							</tbody>
 						</table>
