@@ -5,9 +5,13 @@ $config = include "../config.php";
 $view['js']  = "";
 $view['css'] = "";
 
+$tmpJs = array();
+
 foreach ($config['js'] as $js) {
-    $view['js'] .= '<script type="text/javascript" src="'.$js.'"></script>';
+    $tmpJs[] = '"'.$js.'"';
 }
+$view['js'] = implode(", ", $tmpJs);
+
 foreach ($config['css'] as $css) {
     $view['css'] .= '<link rel="stylesheet" href="'.$css.'" type="text/css">';
 }
